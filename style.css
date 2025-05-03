@@ -1,0 +1,368 @@
+:root{
+    --font-famaly: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+/* h4{
+    background: linear-gradient(30deg, #ff007c, #3d00ad); 
+    -webkit-background-clip: text; 
+    color: transparent; 
+} */
+
+.landingpage{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    background: linear-gradient(to right, rgb(34, 55, 63), rgb(29, 38, 54));
+    background-size: cover; /* Ensures the background covers the full screen */
+    background-attachment: fixed;
+
+}
+.nav{
+    margin: 20px 64px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border-radius: 16px;
+    border: 2px black solid;
+    box-shadow: 16px 32px 16px rgba(0, 0, 0, 0.3);
+}
+.nav>p{
+    font-size: 32px;
+}
+.nav > :nth-child(2) > a{
+    padding: 0 15px;
+}
+.nav > :nth-child(2) > a:hover{
+    color: rgb(255, 255, 255);
+    transition: 250ms;
+    box-shadow: 2px 2px 5px 2px rgba(1, 204, 255, 0.801); 
+    background:transparent;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav > :nth-child(2) > a:active,.nav > :nth-child(2) > a:focus{
+    color: rgb(255, 0, 0);
+}
+.nav>.nav3>.navbtn{
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.87);
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.nav>.nav3>.navbtn:hover {
+    box-shadow: 2px 2px 2px 2px rgba(1, 204, 255, 0.801); 
+}
+
+.hero{
+    display: flex;
+    flex-grow: 1;
+}    
+.heroleft, .heroright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+    padding: 10px;
+}
+.heroright{
+    margin: 0;
+    padding: 0;
+}
+.heroright>img{
+    height: 100%;
+}
+.hero > .heroleft > .maintext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero > .heroleft > .text{
+    margin: 10px 20px;
+}
+.hero > .heroleft > .text > p{
+    font-size: 16px;
+}
+.hero > .heroleft > button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 25px; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.hero>.heroleft>button:hover {
+    box-shadow: 5px 5px 20px 5px rgb(2, 192, 240); /* Glowing effect around the button */
+}
+
+
+.services{
+    background: linear-gradient(to right, rgba(2, 68, 190, 0.842), rgb(11, 140, 190));
+    background-size: cover; /* Ensures the background covers the full screen */
+    background-attachment: fixed;
+    height: 80dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.services>div{
+    margin: 20px 40px;
+    padding: 20px;
+    height: fit-content;
+    width: 40vw;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.services > :nth-child(2){
+    align-self: flex-end;
+}
+.services > div > h4{
+    text-decoration: underline;
+}
+
+.services > div > p{
+    margin: 0 0 0 10px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.icon {
+    font-size: 60px;
+    margin: 10px;
+    display: inline-block;
+}
+.images {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom colors for each icon */
+.fab.fa-html5 {
+    color: #E34F26;  /* HTML5 Red-Orange */
+}
+
+.fab.fa-css3-alt {
+    color: #1572B6;  /* CSS3 Blue */
+}
+
+.fab.fa-js {
+    color: #F7DF1E;  /* JavaScript Yellow */
+}
+
+.fab.fa-react {
+    color: #61DAFB;  /* React Blue */
+}
+
+.fab.fa-npm {
+    color: #CB3837;  /* NPM Red */
+}
+
+.material-icons {
+    color: #F24E1E;  /* Figma Orange (placeholder color) */
+}
+
+.fab.fa-git-alt {
+    color: #F1502F;  /* Git Orange */
+}
+
+.fab.fa-wordpress {
+    color: #21759B;  /* WordPress Blue */
+}
+
+.fab.fa-sass {
+    color: #C69E76;  /* Sass Pink */
+}
+
+/* Tailwind CSS Logo (use CSS3 color as placeholder) */
+.fab.fa-css3-alt {
+    color: #06B6D4;  /* Tailwind Blue */
+}
+
+
+
+
+
+/* Media Queries for Small Devices (Mobile) */
+@media (max-width: 768px) {
+    /* Adjusting the navigation bar */
+    .nav {
+        margin: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav > p {
+        font-size: 24px;
+    }
+
+    .nav > :nth-child(2) > a {
+        padding: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .heroleft, .heroright {
+        flex: none;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .heroleft > .text > p {
+        font-size: 14px;
+    }
+
+    .hero > .heroleft > button {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+
+    .nav>.nav3>.navbtn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .nav>.nav3>.navbtn:hover {
+        box-shadow: 2px 2px 2px 2px rgba(1, 204, 255, 0.801); 
+    }
+
+    .hero > .heroleft > .maintext {
+        padding: 10px;
+    }
+    
+    .hero > .heroleft > .text {
+        margin: 5px 10px;
+    }
+
+    .hero > .heroright > img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Reduce font size for smaller screens */
+    h2 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+}
+
+/* For Very Small Screens (e.g., Portrait Phones) */
+@media (max-width: 480px) {
+    .hero > .heroleft > button {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .nav {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .nav > p {
+        font-size: 20px;
+    }
+
+    .nav > :nth-child(2) > a {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .nav > :nth-child(2) > a:hover {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+}
+

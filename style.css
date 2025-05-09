@@ -37,23 +37,7 @@ h5{
     color: rgb(255, 255, 255);
 }
 
-/* h4{
-    background: linear-gradient(30deg, #ff007c, #3d00ad); 
-    -webkit-background-clip: text; 
-    color: transparent; 
-} */
 
-.landingpage{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
-    background: linear-gradient(to right, rgb(34, 55, 63), rgb(29, 38, 54));
-    background-size: cover; /* Ensures the background covers the full screen */
-    background-attachment: fixed;
-
-}
 .nav{
     margin: 20px 64px;
     padding: 15px;
@@ -94,7 +78,17 @@ h5{
 .nav>.nav3>.navbtn:hover {
     box-shadow: 2px 2px 2px 2px rgba(1, 204, 255, 0.801); 
 }
+.landingpage{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    background: linear-gradient(to right, rgb(34, 55, 63), rgb(29, 38, 54));
+    background-size: cover; 
+    background-attachment: fixed;
 
+}
 .hero{
     display: flex;
     flex-grow: 1;
@@ -137,13 +131,13 @@ h5{
 }
 
 .hero>.heroleft>button:hover {
-    box-shadow: 5px 5px 20px 5px rgb(2, 192, 240); /* Glowing effect around the button */
+    box-shadow: 5px 5px 20px 5px rgb(2, 192, 240);
 }
 
 
 .services{
-    background: linear-gradient(to right, rgba(2, 68, 190, 0.842), rgb(11, 140, 190));
-    background-size: cover; /* Ensures the background covers the full screen */
+    background: linear-gradient(to left, rgb(34, 55, 63), rgb(29, 38, 54));
+    background-size: cover; 
     background-attachment: fixed;
     height: 80dvh;
     display: flex;
@@ -172,14 +166,6 @@ h5{
 
 
 
-
-
-
-
-
-
-
-
 .icon {
     font-size: 60px;
     margin: 10px;
@@ -194,57 +180,34 @@ h5{
     background-color: #ffffff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Custom colors for each icon */
 .fab.fa-html5 {
     color: #E34F26;  /* HTML5 Red-Orange */
 }
-
 .fab.fa-css3-alt {
     color: #1572B6;  /* CSS3 Blue */
 }
-
 .fab.fa-js {
     color: #F7DF1E;  /* JavaScript Yellow */
 }
-
 .fab.fa-react {
     color: #61DAFB;  /* React Blue */
 }
-
 .fab.fa-npm {
     color: #CB3837;  /* NPM Red */
 }
-
 .material-icons {
     color: #F24E1E;  /* Figma Orange (placeholder color) */
 }
-
 .fab.fa-git-alt {
     color: #F1502F;  /* Git Orange */
 }
-
 .fab.fa-wordpress {
     color: #21759B;  /* WordPress Blue */
 }
-
 .fab.fa-sass {
     color: #C69E76;  /* Sass Pink */
 }
-
 /* Tailwind CSS Logo (use CSS3 color as placeholder) */
 .fab.fa-css3-alt {
     color: #06B6D4;  /* Tailwind Blue */
@@ -316,7 +279,7 @@ h5{
 
     /* Reduce font size for smaller screens */
     h2 {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     h4 {

@@ -29,6 +29,12 @@ h2{
     font-weight: 700;
     color: rgb(255, 255, 255);
 }
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
 h4{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -88,7 +94,7 @@ h5{
     display: flex;
     flex-direction: column;
     
-    background: linear-gradient(to right, rgb(34, 55, 63), rgb(29, 38, 54));
+  background: linear-gradient(to bottom left, rgb(34, 55, 63), rgb(29, 38, 54));
     background-size: cover; 
     background-attachment: fixed;
 
@@ -122,9 +128,6 @@ h5{
 .hero > .heroleft > .text{
     margin: 10px 20px;
 }
-.hero > .heroleft > .text > p{
-    font-size: 16px;
-}
 .hero > .heroleft > button {
     position: relative;
     padding: 10px 20px;
@@ -140,32 +143,74 @@ h5{
     box-shadow: 5px 5px 20px 5px rgb(2, 192, 240);
 }
 
-
+.services>h3{
+    text-decoration: underline;
+}
 .services{
-    background: linear-gradient(to left, rgb(34, 55, 63), rgb(29, 38, 54));
+    background: linear-gradient(to top left, rgb(34, 55, 63), rgb(29, 38, 54));
     background-size: cover; 
     background-attachment: fixed;
-    height: 80dvh;
+    height: 100dvh;
+}
+.services>h3{
+    padding: 30px;
+}
+.container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.services>div{
+
+.services>.container>div{
+    background: rgba(255, 255, 255, 0.041);  /* semi-transparent background */
+    backdrop-filter: blur(12px);           /* frosted glass effect */
+    -webkit-backdrop-filter: blur(12px);
     margin: 20px 40px;
     padding: 20px;
-    height: fit-content;
-    width: 40vw;
+    height: 12vh;
+    width: 50vw;
     border: 2px solid black;
     border-radius: 10px;
 }
-.services > :nth-child(2){
+.services >.container> :nth-child(1){
+    margin-bottom: 0;
+}
+.services >.container> :nth-child(2){
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    height: 30vh;
+    height: 5vh;
+    width: .3vw;
+    border: 0px;
+    border-radius: 0;
+}
+.services >.container>:nth-child(4){
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    height: 30vh;
+    height: 5vh;
+    width: .3vw;
+    border: 0px;
+    border-radius: 0;
+}
+
+.services >.container> :nth-child(3){
+    margin: 0;
     align-self: flex-end;
 }
-.services > div > h4{
+.services >.container> :nth-child(5){
+    margin-top: 0;
+}
+
+.services >.container> div > h4{
     text-decoration: underline;
 }
 
-.services > div > p{
+.services >.container> div > p{
     margin: 0 0 0 10px;
     padding-top: 10px;
 }
@@ -209,10 +254,12 @@ img{
         width: 100vw;
     }
     h2{font-size: 32px;}
+    h3{font-size: 26px;}
     h4{font-size: 20px;}
-    p{font-size: 12px;}
+    p{font-size: 16px;}
     .nav{
-        width: 90%;
+        align-self: center;
+        width: 85vw;
         margin: 2vh 0 0 0;
     }
     .nav p{
@@ -235,13 +282,10 @@ img{
         margin: 20px 0 0 0;
     }
     .services{
-        height: 50dvh;
+        height: 100dvh;
     }
     .services>div{
         width: 50vw;
-    }
-    .services>div>{
-
     }
 }
 

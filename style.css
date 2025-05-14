@@ -1,0 +1,266 @@
+:root{
+    --font-famaly: 'Roboto', sans-serif;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+
+.nav{
+    margin: 20px 64px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border-radius: 16px;
+    border: 2px black solid;
+    box-shadow: 16px 32px 16px rgba(0, 0, 0, 0.3);
+}
+.nav>p{
+    font-size: 32px;
+}
+.nav > :nth-child(2) > a{
+    padding: 0 15px;
+}
+.nav > :nth-child(2) > a:hover{
+    color: rgb(255, 255, 255);
+    transition: 250ms;
+    box-shadow: 2px 2px 5px 2px rgba(1, 204, 255, 0.801); 
+    background:transparent;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav > :nth-child(2) > a:active,.nav > :nth-child(2) > a:focus{
+    color: rgb(255, 0, 0);
+}
+.nav>.nav3>.navbtn{
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.87);
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.nav>.nav3>.navbtn:hover {
+    box-shadow: 2px 2px 2px 2px rgba(1, 204, 255, 0.801); 
+}
+.landingpage{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    background: linear-gradient(to right, rgb(34, 55, 63), rgb(29, 38, 54));
+    background-size: cover; 
+    background-attachment: fixed;
+
+}
+.hero{
+    display: flex;
+    flex-grow: 1;
+}    
+.heroleft, .heroright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+    padding: 10px;
+}
+.heroright{
+    margin: 0;
+    padding: 0;
+}
+.heroright>img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.hero > .heroleft > .maintext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero > .heroleft > .text{
+    margin: 10px 20px;
+}
+.hero > .heroleft > .text > p{
+    font-size: 16px;
+}
+.hero > .heroleft > button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 25px; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.hero>.heroleft>button:hover {
+    box-shadow: 5px 5px 20px 5px rgb(2, 192, 240);
+}
+
+
+.services{
+    background: linear-gradient(to left, rgb(34, 55, 63), rgb(29, 38, 54));
+    background-size: cover; 
+    background-attachment: fixed;
+    height: 80dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.services>div{
+    margin: 20px 40px;
+    padding: 20px;
+    height: fit-content;
+    width: 40vw;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.services > :nth-child(2){
+    align-self: flex-end;
+}
+.services > div > h4{
+    text-decoration: underline;
+}
+
+.services > div > p{
+    margin: 0 0 0 10px;
+    padding-top: 10px;
+}
+
+.skills{
+    background: linear-gradient(to left, rgb(34, 55, 63), rgb(29, 38, 54));
+}
+
+.images {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 70px;
+    margin: 10px;
+    display: inline-block;
+}
+
+
+.portfolio{
+    height: 20vh;
+    background: linear-gradient(to left, rgb(34, 55, 63), rgb(29, 38, 54));
+}
+.contact{
+    height: 40vh;
+    background: linear-gradient(to left, rgb(34, 55, 63), rgb(29, 38, 54));
+}
+
+.footer{
+    height: 5vh;
+    background: linear-gradient(to left, rgb(34, 55, 63), rgb(29, 38, 54));
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .body{
+        width: 100vw;
+    }
+    h2{font-size: 32px;}
+    h4{font-size: 20px;}
+    p{font-size: 12px;}
+    .nav{
+        width: 90%;
+        margin: 2vh 0 0 0;
+    }
+    .nav p{
+        font-size: 24px;
+    }
+    .nav .nav2{
+        display: none;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .heroright img {
+        width: 80%;
+        height: auto;
+        margin: 20px 0 0 0;
+    }
+    .services{
+        height: 50dvh;
+    }
+    .services>div{
+        width: 50vw;
+    }
+    .services>div>{
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

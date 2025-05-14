@@ -1,6 +1,10 @@
 :root{
     --font-famaly: 'Roboto', sans-serif;
 }
+html, body {
+  overflow-x: hidden;
+}
+
 
 *{
     margin: 0%;
@@ -22,6 +26,12 @@ p{
 h2{
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
     font-weight: 700;
     color: rgb(255, 255, 255);
 }
@@ -84,7 +94,7 @@ h5{
     display: flex;
     flex-direction: column;
     
-    background: linear-gradient(to right, rgb(34, 55, 63), rgb(29, 38, 54));
+  background: linear-gradient(to bottom left, rgb(34, 55, 63), rgb(29, 38, 54));
     background-size: cover; 
     background-attachment: fixed;
 
@@ -106,7 +116,9 @@ h5{
     padding: 0;
 }
 .heroright>img{
-    height: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 .hero > .heroleft > .maintext{
     display: flex;
@@ -115,9 +127,6 @@ h5{
 }
 .hero > .heroleft > .text{
     margin: 10px 20px;
-}
-.hero > .heroleft > .text > p{
-    font-size: 16px;
 }
 .hero > .heroleft > button {
     position: relative;
@@ -134,198 +143,168 @@ h5{
     box-shadow: 5px 5px 20px 5px rgb(2, 192, 240);
 }
 
-
+.services>h3{
+    text-decoration: underline;
+}
 .services{
-    background: linear-gradient(to left, rgb(34, 55, 63), rgb(29, 38, 54));
+    background: linear-gradient(to top left, rgb(34, 55, 63), rgb(29, 38, 54));
     background-size: cover; 
     background-attachment: fixed;
-    height: 80dvh;
+    height: 100dvh;
+}
+.services>h3{
+    padding: 30px;
+}
+.container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.services>div{
+
+.services>.container>div{
+    background: rgba(255, 255, 255, 0.041);  /* semi-transparent background */
+    backdrop-filter: blur(12px);           /* frosted glass effect */
+    -webkit-backdrop-filter: blur(12px);
     margin: 20px 40px;
     padding: 20px;
-    height: fit-content;
-    width: 40vw;
+    height: 12vh;
+    width: 50vw;
     border: 2px solid black;
     border-radius: 10px;
 }
-.services > :nth-child(2){
+.services >.container> :nth-child(1){
+    margin-bottom: 0;
+}
+.services >.container> :nth-child(2){
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    height: 30vh;
+    height: 5vh;
+    width: .3vw;
+    border: 0px;
+    border-radius: 0;
+}
+.services >.container>:nth-child(4){
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    height: 30vh;
+    height: 5vh;
+    width: .3vw;
+    border: 0px;
+    border-radius: 0;
+}
+
+.services >.container> :nth-child(3){
+    margin: 0;
     align-self: flex-end;
 }
-.services > div > h4{
+.services >.container> :nth-child(5){
+    margin-top: 0;
+}
+
+.services >.container> div > h4{
     text-decoration: underline;
 }
 
-.services > div > p{
+.services >.container> div > p{
     margin: 0 0 0 10px;
     padding-top: 10px;
 }
 
-
-
-.icon {
-    font-size: 60px;
-    margin: 10px;
-    display: inline-block;
+.skills{
+    background: linear-gradient(to left, rgb(34, 55, 63), rgb(29, 38, 54));
 }
+
 .images {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
 }
 
-/* Custom colors for each icon */
-.fab.fa-html5 {
-    color: #E34F26;  /* HTML5 Red-Orange */
-}
-.fab.fa-css3-alt {
-    color: #1572B6;  /* CSS3 Blue */
-}
-.fab.fa-js {
-    color: #F7DF1E;  /* JavaScript Yellow */
-}
-.fab.fa-react {
-    color: #61DAFB;  /* React Blue */
-}
-.fab.fa-npm {
-    color: #CB3837;  /* NPM Red */
-}
-.material-icons {
-    color: #F24E1E;  /* Figma Orange (placeholder color) */
-}
-.fab.fa-git-alt {
-    color: #F1502F;  /* Git Orange */
-}
-.fab.fa-wordpress {
-    color: #21759B;  /* WordPress Blue */
-}
-.fab.fa-sass {
-    color: #C69E76;  /* Sass Pink */
-}
-/* Tailwind CSS Logo (use CSS3 color as placeholder) */
-.fab.fa-css3-alt {
-    color: #06B6D4;  /* Tailwind Blue */
+img{
+    height: 70px;
+    margin: 10px;
+    display: inline-block;
 }
 
 
+.portfolio{
+    height: 20vh;
+    background: linear-gradient(to left, rgb(34, 55, 63), rgb(29, 38, 54));
+}
+.contact{
+    height: 40vh;
+    background: linear-gradient(to left, rgb(34, 55, 63), rgb(29, 38, 54));
+}
 
+.footer{
+    height: 5vh;
+    background: linear-gradient(to left, rgb(34, 55, 63), rgb(29, 38, 54));
+}
 
-
-/* Media Queries for Small Devices (Mobile) */
-@media (max-width: 768px) {
-    /* Adjusting the navigation bar */
-    .nav {
-        margin: 10px 20px;
-        flex-direction: column;
-        align-items: flex-start;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .body{
+        width: 100vw;
     }
-    
-    .nav > p {
+    h2{font-size: 32px;}
+    h3{font-size: 26px;}
+    h4{font-size: 20px;}
+    p{font-size: 16px;}
+    .nav{
+        align-self: center;
+        width: 85vw;
+        margin: 2vh 0 0 0;
+    }
+    .nav p{
         font-size: 24px;
     }
-
-    .nav > :nth-child(2) > a {
-        padding: 10px;
+    .nav .nav2{
+        display: none;
     }
 
     .hero {
-        flex-direction: column;
-        padding: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
     }
 
-    .heroleft, .heroright {
-        flex: none;
-        width: 100%;
-        padding: 20px;
-    }
-
-    .heroleft > .text > p {
-        font-size: 14px;
-    }
-
-    .hero > .heroleft > button {
-        padding: 12px 24px;
-        font-size: 18px;
-    }
-
-    .nav>.nav3>.navbtn {
-        padding: 12px 20px;
-        font-size: 14px;
-    }
-
-    .nav>.nav3>.navbtn:hover {
-        box-shadow: 2px 2px 2px 2px rgba(1, 204, 255, 0.801); 
-    }
-
-    .hero > .heroleft > .maintext {
-        padding: 10px;
-    }
-    
-    .hero > .heroleft > .text {
-        margin: 5px 10px;
-    }
-
-    .hero > .heroright > img {
-        width: 100%;
+    .heroright img {
+        width: 80%;
         height: auto;
-        object-fit: contain;
+        margin: 20px 0 0 0;
     }
-
-    /* Reduce font size for smaller screens */
-    h2 {
-        font-size: 24px;
+    .services{
+        height: 100dvh;
     }
-
-    h4 {
-        font-size: 18px;
-    }
-
-    h5 {
-        font-size: 14px;
+    .services>div{
+        width: 50vw;
     }
 }
 
-/* For Very Small Screens (e.g., Portrait Phones) */
-@media (max-width: 480px) {
-    .hero > .heroleft > button {
-        width: 100%;
-        padding: 15px 0;
-    }
-
-    .nav {
-        margin: 0;
-        padding: 10px;
-    }
-
-    .nav > p {
-        font-size: 20px;
-    }
-
-    .nav > :nth-child(2) > a {
-        font-size: 18px;
-        padding: 8px;
-    }
-
-    .nav > :nth-child(2) > a:hover {
-        font-size: 18px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    h4 {
-        font-size: 16px;
-    }
-
-    h5 {
-        font-size: 12px;
-    }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
